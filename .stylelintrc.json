@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-css-modules",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "selector-class-pattern": null,
+    "scss/at-mixin-pattern": null,
+    "no-descending-specificity": null
+  }
+}
