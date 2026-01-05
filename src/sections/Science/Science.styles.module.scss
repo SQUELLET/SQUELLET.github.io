@@ -1,0 +1,46 @@
+.section {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, $ink-black, #0a0d12);
+}
+
+.title {
+  text-align: center;
+  font-family: $font-tech;
+  color: $bio-cyan;
+  margin-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: $glass-bg;
+  padding: 40px;
+  border-left: 2px solid $bio-cyan;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: rgba($bio-cyan, 0.05);
+  }
+
+  h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: $steel-gray;
+    line-height: 1.6;
+  }
+}
+
+.stat {
+  font-family: $font-tech;
+  font-size: 0.8rem;
+  color: $bio-cyan;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

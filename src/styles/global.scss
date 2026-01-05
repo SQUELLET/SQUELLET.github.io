@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono&display=swap');
+
+body {
+  background-color: $ink-black;
+  color: $paper-white;
+  font-family: $font-main;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+// Global scrollbar for that "High-Tech Lab" feel
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: $bio-cyan;
+  border-radius: 10px;
+}
+// Add this to global.scss
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1.5rem;
+  }
+}

@@ -1,0 +1,49 @@
+.section { padding: 100px 0; background: $ink-black; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  @media (max-width: 768px) { grid-template-columns: 1fr; }
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 40px;
+  border: 1px solid rgba($bio-cyan, 0.1);
+
+  .inputGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    label { font-family: $font-tech; color: $bio-cyan; font-size: 0.7rem; margin-bottom: 8px; }
+
+    input, select {
+      background: #12161d; // Force a dark background
+      border: 1px solid rgba($steel-gray, 0.3);
+      padding: 12px;
+      color: white; // Force white text
+      
+      &:focus { outline: none; border-color: $bio-cyan; }
+    }
+
+    // FIX FOR THE INVISIBLE DROPDOWN
+    select option {
+      background: #12161d;
+      color: white;
+    }
+  }
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 15px;
+  background: $bio-cyan;
+  color: $ink-black;
+  font-family: $font-tech;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  &:hover { background: $paper-white; }
+}
