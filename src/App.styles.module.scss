@@ -6,6 +6,10 @@ $pageMax: 1120px;
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0px;
+}
+
 .page {
   min-height: 100vh;
   color: rgba(255, 255, 255, 0.92);
